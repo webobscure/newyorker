@@ -1,0 +1,169 @@
+.hidden {display:none}
+#footer.expanded {
+    transform: translateY(0%);
+    bottom: 0;
+    padding-top: 0;
+}
+#footer {
+    pointer-events: none;
+    background: 0 0;
+    position: fixed;
+    bottom: 75px;
+    width: 100%;
+    max-height: 85%;
+    overflow: auto;
+    z-index: 1501;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: all 1s ease;
+}
+#footer .footer-toggle {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    pointer-events: none;
+}
+#footer .visible-area {
+    pointer-events: all;
+    background-color: rgba(255,255,255,.95);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+    padding: 0 20px 0 0;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: right;
+}
+#footer .invisible-area {
+    pointer-events: all;
+    background-color: rgba(255,255,255,.95);
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+#footer .footer-toggle .nav-icon {
+    pointer-events: all;
+    cursor: pointer;
+    background-color: gray;
+    background-color: rgba(128,128,128,.5);
+    border-radius: 25px;
+    color: #fff;
+    padding: 5px;
+    line-height: 50px;
+}
+#footer.expanded .footer-toggle .nav-icon:before {
+    background-image: url(img/arrow-down.png);
+}
+#footer .footer-toggle .nav-icon:before {
+    line-height: 50px;
+    vertical-align: top;
+}
+
+#footer .visible-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#footer .visible-area ul li {
+    display: inline-block;
+}
+#footer .visible-area ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+
+a {
+    color: #242424;
+    text-decoration: underline;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+#footer .visible-area ul li:after {
+    display: inline-block;
+    content: '|';
+    position: relative;
+    top: 2px;
+    color: #dbdbdb;
+}
+#footer .invisible-area>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer .invisible-area .nav-divider {
+    width: 5px;
+    background-color: #363636;
+    height: 43px;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    margin: 0 30px 0 10px;
+}
+
+#footer .invisible-area>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+#footer .invisible-area ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#footer .invisible-area ul li {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 43px;
+    padding: 5px 0;
+}
+#footer .invisible-area .nav-left a {
+    width: 50px;
+}
+
+#footer a {
+    color: #363636;
+}
+#footer .invisible-area .nav-right a {
+    display: block;
+    line-height: 42px;
+    text-align: left;
+}
+#footer .invisible-area .nav-right .nav-icon {
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    margin-right: 10px;
+}
+
+#footer .invisible-area .nav-icon {
+    font-size: 36px;
+    vertical-align: middle;
+}
+#footer .invisible-area .nav-right a:after {
+    display: table;
+    content: ' ';
+    clear: both;
+}
+#footer .invisible-area .nav-icon:before {
+    margin: 0;
+}
+
+.iconny-mail-7:before {
+    content: '\e80d';
+}
+[class^=iconny-]:before, [class*=" iconny-"]:before {
+    font-family: ny-lifestyle;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

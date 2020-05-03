@@ -63,6 +63,12 @@ li:hover {
 .fas {
     padding-right: 5px;
 }
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
 @media (max-width: 991px) {
     header 
     {
@@ -94,7 +100,5 @@ li:hover {
         display: block;
         text-align: center;
     }
-    header nav ul li a {
-        border-bottom: 1px solid rgba(0,0,0, .2);
-    }
+    
 }
