@@ -23,13 +23,6 @@
         </nav>
         <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
-        menuToggle.addEventListener('click', () => {
-            if (nav.className != 'active') { nav.className = 'active'; }
-            else { nav.className = ''; }
-        });
-    </script>
+    
 </body>
 </html>

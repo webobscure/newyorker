@@ -8,9 +8,7 @@
 </head>
 <body>
     <div id="footer" class="expanded">
-  <div class="footer-toggle">
-   <button id="footer-toggle"> <i class="fas fa-arrow-down" style="font-size: 1.5rem;"></i> </button> 
-  </div>
+  
 
   <div class="visible-area  ">
     <ul>
@@ -84,23 +82,7 @@
     </div>
   </div>
 </div>
-<script>
-        const footerToggle = document.querySelector('.footer-toggle');
-        const area = document.querySelector('.invisible-area');
-        footerToggle.addEventListener('click', () => {
-            if (area.className != 'show') { area.className = 'show'; }
-            else { area.className = 'hide'; }
-        });
-$( document ).ready(function(){
-	  $( ".hide" ).click(function(){ // задаем функцию при нажатиии на элемент с классом hide
-	    $( ".invisible-area" ).hide(); // скрывыаем все элементы <p>
-	  });
-	  $( ".show" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
-	    $( ".invisible-area" ).show(); // отображаем все элементы <p>
-	  });
-	});
 
-
-    </script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </body>
 </html>

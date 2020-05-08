@@ -10,17 +10,23 @@ header {
     page-break-after: 0 100px;
     width: 100%;
     box-sizing: border-box;
+    background: #ffffff;
+
 }
 a {
     color: #333333;
 }
 header .logo {
     color: #ffffff;
-    height: 50px;
+    height: 60px;
     line-height: 50px;
     font-size: 24px;
     float: left;
     font-weight: bold;
+}
+.logo:hover {
+   opacity: 1.5;
+   color: #ffffff;
 }
 header nav  {
     float: right;
@@ -69,11 +75,139 @@ li:hover {
 .hide {
     display: none;
 }
+body main {
+    display: block;
+    margin-top: 60px;
+    transition: margin-top .5s ease;
+}
+/*       <Brand тута       */
+
+#brands {
+    margin: 0 5px;
+    background: #000;
+    position: relative;
+    top: -7px;
+    min-height: 84px;
+    text-align: center;
+    padding: 5px 0 4px;
+}    
+#brands a {
+    display: inline-block;
+    margin: 0 15px 20px;
+    text-decoration: none;
+}
+#brands a .font {
+    padding: 10px 0;
+    color: #585858;
+    transition: color ease .3s;
+}
+
+#brands .icon-amisu {
+    font-size: 12px;
+}
+#brands .icon-fbs {
+    font-size: 40px;
+    position: relative;
+    top: 6px;
+}
+#brands .icon-censored {
+    font-size: 18px;
+}
+#brands .icon-smog-new {
+    position: relative;
+    top: 3px;
+    transition: fill .3s ease;
+}
+#brands .icon-smog-new svg {
+    height: 18px;
+    width: 80px;
+}
+
+#brands a svg {
+    fill: #585858;
+    -webkit-font-smoothing: antialiased;
+    width: auto;
+    transition: fill .3s ease;
+}
+#brands .icon-fsbn {
+    font-size: 18px;
+}
+#brands .icon-black-squad-new {
+    position: relative;
+    top: 9px;
+}
+[class^=icon-]:before, [class*=" icon-"]:before {
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: inherit;
+    width: auto;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*       Карусель тута       */
+ section {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+ }
+ section video {
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .navigation {
+    position: absolute;
+    bottom: 40px;
+    left: 20%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .navigation li {
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: #ffffff;
+    padding: 3px 3px 0;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+section .navigation li:hover {
+    opacity: 0.1;
+}
+section .navigation li img {
+    width: 120px;
+    transition: 0.5s;
+
+}
+section .navigation li img:hover {
+    width: 200px;
+    opacity: 1;
+} 
+/*       Медиа тута       */
+
 @media (max-width: 991px) {
     header 
     {
         padding: 0 20px;
     }
+    
     .logo {
         margin-left: 47%;
         display: block;
@@ -83,6 +217,9 @@ li:hover {
     {
         color:#333333;
         display: block;
+    }
+    #carousel {
+        display: none;
     }
     header nav 
     {
@@ -100,5 +237,7 @@ li:hover {
         display: block;
         text-align: center;
     }
-    
+    #footer {
+        display: none;
+    }
 }
